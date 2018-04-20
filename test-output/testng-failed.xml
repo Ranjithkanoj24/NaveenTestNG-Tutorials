@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Sessions.GoogleTest">
+      <class name="com.testng.naveen._02GoogleTest">
         <methods>
-          <include name="tearUp"/>
-          <include name="titleTest"/>
           <include name="setUp"/>
+          <include name="titleTest"/>
+          <include name="tearUp"/>
+          <include name="emailLinkTest"/>
         </methods>
-      </class> <!-- com.Sessions.GoogleTest -->
+      </class> <!-- com.testng.naveen._02GoogleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

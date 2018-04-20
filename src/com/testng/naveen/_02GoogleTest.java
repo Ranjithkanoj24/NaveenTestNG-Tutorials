@@ -1,4 +1,4 @@
-package com.Sessions;
+package com.testng.naveen;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class GoogleTest {
+public class _02GoogleTest {
 	WebDriver driver;
 	@BeforeMethod
 	public void setUp() {
@@ -22,7 +22,7 @@ public class GoogleTest {
 	driver.navigate().to("https://www.google.com");
 	}
 	
-	@Test(groups="titleTest")
+	@Test(priority=1)
 	public void titleTest() {
 		String title = driver.getTitle();
 		System.out.println(title);
@@ -30,9 +30,9 @@ public class GoogleTest {
 		Assert.assertTrue(10<9, "Fuck off");
 	}
 	
-	/*@Test(groups="LogoTest")
+	@Test(priority=2)
 	public void googleLogoTest() {
-		WebElement logo = driver.findElement(By.xpath("//img[@alt='Hannah Glasse’s 310th birthday']"));
+		WebElement logo = driver.findElement(By.xpath("//img"));
 		boolean result = logo.isDisplayed();
 		if(result)
 		System.out.println("Logo is displayed");
@@ -40,7 +40,7 @@ public class GoogleTest {
 		System.out.println("Logo not dispalyed");
 	}
 	
-	@Test(groups="emailTest")
+	@Test(priority=3)
 	public void emailLinkTest() {
 		WebElement mailLink = driver.findElement(By.xpath("//a[text()='Gail']"));
 		boolean result = mailLink.isDisplayed();
@@ -50,22 +50,25 @@ public class GoogleTest {
 		System.out.println("MailLink is not displayed");
 		
 	}
-	
-	@Test(groups="CommomTest")
+	@Test
+	public void failMethod() {
+		boolean b = false;
+	}
+	@Test
 	public void test1() {
 		System.out.println("This is Test1");
 	}
 	
-	@Test(groups="CommomTest")
+	@Test
 	public void test2() {
 		System.out.println("This is Test2");
 	}
 	
-	@Test(groups="CommomTest")
+	@Test
 	public void test3() {
 		System.out.println("This is Test3");
 	}
-*/	
+
 	@AfterMethod
 	public void tearUp() {
 		driver.quit();
