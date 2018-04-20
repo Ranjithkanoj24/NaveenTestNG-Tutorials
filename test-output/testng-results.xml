@@ -1,30 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-03-28T14:24:47Z" name="Default suite" finished-at="2018-03-28T14:25:07Z" duration-ms="20024">
+  <suite started-at="2018-04-20T15:37:29Z" name="Default suite" finished-at="2018-04-20T15:37:29Z" duration-ms="38">
     <groups>
-      <group name="titleTest">
-        <method signature="GoogleTest.titleTest()[pri:0, instance:com.Sessions.GoogleTest@38e79ae3]" name="titleTest" class="com.Sessions.GoogleTest"/>
-      </group> <!-- titleTest -->
     </groups>
-    <test started-at="2018-03-28T14:24:47Z" name="Default test" finished-at="2018-03-28T14:25:07Z" duration-ms="20024">
-      <class name="com.Sessions.GoogleTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Sessions.GoogleTest@38e79ae3]" started-at="2018-03-28T14:24:47Z" name="setUp" finished-at="2018-03-28T14:25:06Z" duration-ms="18935" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="titleTest()[pri:0, instance:com.Sessions.GoogleTest@38e79ae3]" started-at="2018-03-28T14:25:06Z" name="titleTest" finished-at="2018-03-28T14:25:06Z" duration-ms="18" status="FAIL">
-          <exception class="java.lang.AssertionError">
+    <test started-at="2018-04-20T15:37:29Z" name="Default test" finished-at="2018-04-20T15:37:29Z" duration-ms="38">
+      <class name="com.Sessions.AnnotationsTest">
+        <test-method signature="test5()[pri:0, instance:com.Sessions.AnnotationsTest@5b94b04d]" started-at="2018-04-20T15:37:29Z" name="test5" finished-at="2018-04-20T15:37:29Z" duration-ms="16" status="PASS">
+          <exception class="java.lang.ArithmeticException">
             <message>
-              <![CDATA[Fuck off expected [true] but found [false]]]>
+              <![CDATA[/ by zero]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Fuck off expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at com.Sessions.GoogleTest.titleTest(GoogleTest.java:30)
+              <![CDATA[java.lang.ArithmeticException: / by zero
+at com.Sessions.AnnotationsTest.test5(AnnotationsTest.java:36)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -52,15 +42,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.ArithmeticException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- titleTest -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Sessions.GoogleTest@38e79ae3]" started-at="2018-03-28T14:25:06Z" name="tearUp" finished-at="2018-03-28T14:25:07Z" duration-ms="1049" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearUp -->
-      </class> <!-- com.Sessions.GoogleTest -->
+        </test-method> <!-- test5 -->
+      </class> <!-- com.Sessions.AnnotationsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

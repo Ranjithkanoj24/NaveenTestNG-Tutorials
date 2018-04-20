@@ -1,4 +1,4 @@
-package com.Sessions;
+package com.testng.naveen;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class FirstTestNGClass {
+public class _01FirstTestNGClass {
 	
 	@BeforeSuite
 	public void beforeSuite() {
@@ -54,16 +54,16 @@ public class FirstTestNGClass {
 	
 	@Test
 	public void method1() {
-		System.out.println("This is before method1");
+		System.out.println("This is method1");
 	}
 	
 	@Test
 	public void method2() {
-		System.out.println("This is before method2");
+		System.out.println("This is method2");
 	}
 	@Test
 	public void method3() {
-		System.out.println("This is before method3");
+		System.out.println("This is method3");
 	}
 	
 }
